@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand pb-0 sticky-top main-nav">
+    <div class="container pb-2 justify-content-center">
+        <ul class="nav navbar-nav flex-fill w-100 flex-nowrap justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link {% include active.html url="/sketches/"%}" href="{{ "/sketches/" | relative_url }}">
+                    <i class="fa fa-palette"></i>
+                    <span class="d-none d-sm-inline"> Sketches</span>
+                </a>
+            </li>
+        </ul>
+        <div class="nav navbar-nav flex-fill justify-content-center">
+            <a class="navbar-brand nav-link {% include active.html url="/"%}" href="{{ "/" | relative_url }}">
+                {{ site.title }}
+            </a>
+        </div>
+        <ul class="nav navbar-nav flex-fill w-100 justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ site.github.repository_url }}">
+                    <i class="fa fa-code-branch"></i>
+                    <span class="d-none d-sm-inline"> Fork</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

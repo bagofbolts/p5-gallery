@@ -1,0 +1,8 @@
+{% assign sketch = include.object %}
+<div class="col-auto mb-3">
+    <a class="card" href="{{ sketch.url | relative_url }}">
+        <h5 class="card-title py-2">{{ sketch.title }}</h5>
+        {% assign source = "/assets/img/sketch-previews/" | append : sketch.thumbnail | append : "/still.jpg" %}
+        <img class="card-img gif-img" alt="Could not preview" src="{{ source | relative_url }}">
+    </a>
+</div>

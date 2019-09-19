@@ -1,0 +1,12 @@
+<div class="row pt-3 justify-content-center">
+{% assign sorted = site.sketches | sort: 'date' | reverse %}
+
+{% assign count = none %}
+{% if include.limit %}
+    {% assign count = include.limit %}
+{% endif %}
+
+{% for sketch in sorted limit: count %}
+    {% include preview.html object=sketch %}
+{% endfor %}
+</div>

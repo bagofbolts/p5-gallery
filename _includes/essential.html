@@ -1,0 +1,5 @@
+{% assign cdn = site.data.cdn[include.type] %}
+{% for e in site.essentials %}
+    {{ cdn[e].comment }}
+    {{ cdn[e].element }}
+{% endfor %}

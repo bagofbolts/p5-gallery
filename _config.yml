@@ -1,0 +1,44 @@
+title: p5 Gallery
+descrition: >-
+    A gallery of sketches written with p5.js, the Processing library in JavaScript and Jekyll, the static site generator
+
+baseurl: "p5-gallery"
+url : ""
+
+# Personal Information
+author:
+    first_name: Kelvin
+    last_name : DeCosta
+    website: https://kelvindecosta.com
+    email : me@kelvindecosta.com
+    linkedin: https://linkedin.com/in/kelvin-decosta-991721146
+
+essentials:
+    -   jquery
+    -   popper
+    -   bootstrap
+    -   fontawesome
+
+# Google Analytics
+google_analytics: "UA-122023523-1"
+
+# Build Settings
+markdown: kramdown
+
+sass:
+    style: compressed
+
+exclude : [ README.md ]
+
+collections:
+    sketches:
+        output: true
+        permalink: /:collection/:title
+
+defaults:
+    -
+        scope:
+            path: ""
+            type: "sketches"
+        values:
+            layout: sketch

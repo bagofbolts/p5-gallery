@@ -1,0 +1,7 @@
+{% if page.scripts %}
+<!-- sketch scripts -->
+{% for script in page.scripts %}
+    {% assign url = "/assets/js/sketch_scripts/" | append : script | append : ".js" %}
+    <script type="text/javascript" src="{{ url | relative_url }}"></script>
+{% endfor %}
+{% endif %}

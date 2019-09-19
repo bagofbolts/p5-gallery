@@ -1,0 +1,8 @@
+{% if page.title %}
+    {% if page.collection == "sketches" %}
+        {{ page.title }} | Sketches |
+    {% else %}
+        {{ page.title }} |
+    {% endif %}
+{% endif %}
+{{ site.title }}

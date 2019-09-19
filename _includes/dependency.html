@@ -1,0 +1,8 @@
+{% if page.dependencies %}
+    <!-- p5 dependencies -->
+    {% assign cdn = site.data.cdn.js %}
+    {% for name in page.dependencies %}
+        {{ cdn[name].comment }}
+        {{ cdn[name].element }}
+    {% endfor %}
+{% endif %}
